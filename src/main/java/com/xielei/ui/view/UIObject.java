@@ -9,7 +9,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
- * 这里将一些公用的方法和事件操作抽象为父类，共所有的框体使用
+ * 这里将一些公用的方法和事件操作抽象为父类
+ * 每一个实例都是一个新的UI框体对象
  *
  * @author xielei
  * @date 2023/5/15 09:24

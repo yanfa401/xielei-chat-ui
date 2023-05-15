@@ -1,5 +1,7 @@
 package com.xielei.ui;
 
+import com.xielei.ui.view.chat.ChatController;
+import com.xielei.ui.view.chat.IChatMethod;
 import com.xielei.ui.view.login.ILoginEvent;
 import com.xielei.ui.view.login.ILoginMethod;
 import com.xielei.ui.view.login.LoginController;
@@ -21,13 +23,15 @@ public class Bootstrap extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        ILoginMethod login = new LoginController(new ILoginEvent() {
-            @Override
-            public void doLoginCheck(String userId, String userPassword) {
-                log.debug("登陆 userId：" + userId + "userPassword：" + userPassword);
-            }
-        });
-        login.doShow();
+//        ILoginMethod login = new LoginController(new ILoginEvent() {
+//            @Override
+//            public void doLoginCheck(String userId, String userPassword) {
+//                log.debug("登陆 userId：" + userId + "userPassword：" + userPassword);
+//            }
+//        });
+//        login.doShow();
 
+        IChatMethod chat = new ChatController();
+        chat.doShow();
     }
 }

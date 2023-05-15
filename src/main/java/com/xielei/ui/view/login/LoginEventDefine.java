@@ -5,6 +5,8 @@ import javafx.event.EventHandler;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 窗体UI的动作定义
+ *
  * @author xielei
  * @date 2023/5/15 09:43
  */

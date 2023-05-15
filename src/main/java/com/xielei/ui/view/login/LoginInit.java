@@ -15,6 +15,11 @@ import javafx.scene.paint.Color;
 import javafx.stage.StageStyle;
 
 /**
+ * 窗体对象的初始化操作
+ * 例如初始化按钮, 初始化root窗体等等
+ *
+ * todo 后续可以考虑抽出一个类, LoginInit只负责初始化动作, 新搞一个Element做为元素的载体
+ *
  * @author xielei
  * @date 2023/5/15 09:31
  */
