@@ -57,7 +57,7 @@
     -fx-border-width: 2px;
     -fx-border-color: #f1f1f1;
     -fx-border-radius: 4px;
-    -fx-background-image: url("../img/head_default_100.png");
+    -fx-background-image: url("../img/qrcode.png");
 }
 
 .login_button,.login_button:pressed{

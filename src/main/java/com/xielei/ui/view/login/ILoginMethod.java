@@ -16,7 +16,7 @@ public interface ILoginMethod {
     void doLoginError();
 
     /**
-     * 登录成功
+     * 登录成功,跳转聊天窗口[关闭登陆窗口，打开新窗口]
      */
     void doLoginSuccess();
 

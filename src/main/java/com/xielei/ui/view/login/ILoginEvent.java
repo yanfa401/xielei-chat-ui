@@ -1,5 +1,8 @@
 package com.xielei.ui.view.login;
 
+/**
+ * 事件接口
+ */
 public interface ILoginEvent {
 
     /**
