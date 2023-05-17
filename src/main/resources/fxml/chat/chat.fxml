@@ -27,7 +27,7 @@
         <Pane visible="true" fx:id="group_bar_chat" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" style="-fx-background-color: pink;" />
 
         <!--组: group_bar_friend-->
-        <Pane visible="true" fx:id="group_bar_friend" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" style="-fx-background-color: yellow;" />
+        <Pane visible="true" fx:id="group_bar_friend" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" style="-fx-background-color: green;" />
 
 
     </children>

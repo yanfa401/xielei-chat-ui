@@ -92,7 +92,7 @@ public class ChatEventDefine {
     // 切换：bar_chat
     private void switchBarChat(Button bar_chat, Pane group_bar_chat, boolean toggle) {
         if (toggle) {
-            bar_chat.setStyle("-fx-background-image: url('/fxml/chat/img/system/chat_2.png')");
+            bar_chat.setStyle("-fx-background-image: url('/fxml/chat/img/system/chat_1.png')");
             group_bar_chat.setVisible(true);
         }
         else {
@@ -104,7 +104,7 @@ public class ChatEventDefine {
     // 切换：bar_friend
     private void switchBarFriend(Button bar_friend, Pane group_bar_friend, boolean toggle) {
         if (toggle) {
-            bar_friend.setStyle("-fx-background-image: url('/fxml/chat/img/system/friend_2.png')");
+            bar_friend.setStyle("-fx-background-image: url('/fxml/chat/img/system/friend_1.png')");
             group_bar_friend.setVisible(true);
         }
         else {
