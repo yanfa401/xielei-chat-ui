@@ -1,7 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.layout.Pane?>
 
 <!--聊天主界面-->
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+
+<!--这里引入了css-->
 <Pane fx:id="Chat" styleClass="Chat" prefHeight="820.0" prefWidth="1243.0" stylesheets="@css/chat.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <!--条形框体部分-->
@@ -22,13 +30,33 @@
             <Button fx:id="bar_set" layoutX="23" layoutY="770" mnemonicParsing="false" prefHeight="30" prefWidth="30" />
 
         </Pane>
-
-        <!--组: group_bar_chat-->
-        <Pane visible="true" fx:id="group_bar_chat" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" style="-fx-background-color: pink;" />
-
-        <!--组: group_bar_friend-->
-        <Pane visible="true" fx:id="group_bar_friend" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" style="-fx-background-color: green;" />
-
-
     </children>
+
+    <!--好友栏部分-->
+    <Pane visible="true" fx:id="group_bar_chat" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" >
+        <children>
+            <!--搜索栏-->
+            <Pane styleClass="search" prefHeight="80" prefWidth="314">
+                <children>
+                    <TextField styleClass="searchInput" layoutX="20" layoutY="30" prefHeight="30" prefWidth="240" promptText="搜索">
+                        <padding>
+                            <Insets left="30" />
+                        </padding>
+                    </TextField>
+                    <Label styleClass="searchAdd" layoutX="270" layoutY="30" prefHeight="30" prefWidth="30" />
+                </children>
+            </Pane>
+
+            <!--会话栏-->
+            <Pane fx:id="talk" layoutY="80" prefHeight="738" prefWidth="314">
+                <children>
+                    <ListView fx:id="talkList" prefHeight="738" prefWidth="314" styleClass="talkListStyle" />
+                </children>
+            </Pane>
+        </children>
+    </Pane>
+
+    <!--组: group_bar_friend-->
+    <Pane visible="false" fx:id="group_bar_friend" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818" style="-fx-background-color: green;" />
+
 </Pane>
